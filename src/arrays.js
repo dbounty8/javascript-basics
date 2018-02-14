@@ -1,6 +1,5 @@
 export const getNthElement = (index, array) => {
   // your code here
-};
 
 export const arrayToCSVString = (array) => {
   // your code here
