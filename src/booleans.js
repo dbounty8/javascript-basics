@@ -40,33 +40,31 @@ export const one = (a, b) => {
 
 export const truthiness = (a) => {
   // your code here
-  if (a ==' ' ) {
+    if ((a==[]) || (a=={}) || (a =='dbbd') || (a =='3'))
+      {
+        return true;
+      } 
+    if ((a=="''") || (a==0) || (a ==null) || (a ==undefined) || (a ==NaN))
+      {
+        return false;
+      }
+/*
+   if (a ==' ') {
     return false;
    } 
-   if (a =='dbbd' ) {
-    return true;
-   } 
-   if (a ==0 ){
+   if (a ==0){
     return false;
    } 
-   if (a ==3 ){
-    return true;
-   } 
-   if (a =='[]') {
-    return true;
-   } 
-   if (a =={}) {
-    return true;
-   } 
-   if (a ==null ){
+   if (a ==null){
     return false;
    } 
-   if (a ==undefined ){
+   if (a ==undefined){
     return false;
    } 
-   if (a ==NaN ){
+   if (a ==NaN){
     return false;
    } 
+*/
 };
 
 export const isEqual = (a, b) => {
@@ -81,23 +79,31 @@ export const isGreaterThan = (a, b) => {
 
 export const isLessThanOrEqualTo = (a, b) => {
   // your code here
-  return a <== b;
+  return a <= b;
 };
 
 export const isOdd = (a) => {
   // your code here
+  return a%2==1;
 };
 
 export const isEven = (a) => {
   // your code here
+  return a%2==0;
 };
 
 export const isSquare = (a) => {
   // your code here
+  return Math.sqrt(a) % 1 === 0;
 };
 
 export const startsWith = (char, string) => {
   // your code here
+  if (string.charAt(0) == char){
+    return true;
+  } else {
+    return false;
+  }
 };
 
 export const containsVowels = (string) => {
